@@ -7,10 +7,15 @@ Permite gestionar usuarios, títulos y reseñas, donde cada usuario puede valora
 Estructura del Proyecto
 
 mongo_resenias_db/
+
 ├── README.md                → Descripción general del proyecto
+
 ├── database.js              → Creación de la base de datos y colecciones
+
 ├── consultas_basicas.js     → Consultas básicas (insertar, actualizar, eliminar, buscar)
+
 ├── consultas_agregacion.js  → Consultas de agregación (promedio, suma, conteo, etc.)
+
 
 Estructura de la Base de Datos
 
