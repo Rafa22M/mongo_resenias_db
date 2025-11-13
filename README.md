@@ -20,10 +20,14 @@ mongo_resenias_db/
 Estructura de la Base de Datos
 
 Base de datos: resenias_db
+
 Colecciones:
+
 usuario →Guarda la información de los usuarios registrados.
- titulo →Contiene los títulos de películas o series.
- resenia →Registra las reseñas y puntuaciones de los usuarios sobre los títulos.
+
+titulo →Contiene los títulos de películas o series.
+
+resenia →Registra las reseñas y puntuaciones de los usuarios sobre los títulos.
 
 Ejecución
 
