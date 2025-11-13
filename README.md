@@ -19,19 +19,19 @@ mongo_resenias_db/
 
 Estructura de la Base de Datos
 
-Base de datos: `resenias_db`
+Base de datos: resenias_db
 Colecciones:
-`usuario` → Guarda la información de los usuarios registrados.
- `titulo` → Contiene los títulos de películas o series.
- `resenia` → Registra las reseñas y puntuaciones de los usuarios sobre los títulos.
+usuario →Guarda la información de los usuarios registrados.
+ titulo →Contiene los títulos de películas o series.
+ resenia →Registra las reseñas y puntuaciones de los usuarios sobre los títulos.
 
 Ejecución
 
 1. Abre el MongoDB Shell o tu entorno de consola conectado a Atlas.
-2. Copia y ejecuta el contenido de `database.js` para crear la base de datos y las colecciones.
+2. Copia y ejecuta el contenido del archivo database.js para crear la base de datos y las colecciones.
 3. Ejecuta las inserciones.
-4. Prueba las consultas básicas desde `consultas_basicas.js`.
-5. Ejecuta las consultas de agregación con `consultas_agregacion.js`.
+4. Prueba las consultas básicas desde el archivo consultas_basicas.js.
+5. Ejecuta las consultas de agregación desde el archivo consultas_agregacion.js.
 
  Consultas Implementadas
 
