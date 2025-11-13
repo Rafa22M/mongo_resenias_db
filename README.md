@@ -17,9 +17,7 @@ mongo_resenias_db/
 ├── consultas_agregacion.js  → Consultas de agregación (promedio, suma, conteo, etc.)
 
 
-Estructura de la Base de Datos
-
-Base de datos: resenias_db
+Estructura de la Base de Datos resenias_db
 
 Colecciones:
 
