@@ -1,0 +1,246 @@
+// CREACIÓN DE BASE DE DATOS Y COLECCIONES
+//-----------------------------------------------------------------------------
+// Crear la base de datos
+use("resenias_db");
+
+// Crear las colecciones
+db.createCollection("resenia")
+db.createCollection("titulo")
+db.createCollection("usuario")
+
+//Insertar documentos en la colección: usuario
+db.usuario.insertOne({ nombre: "María Gómez", email: "maria.gomez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Luis Rodríguez", email: "luis.rodriguez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Ana Torres", email: "ana.torres@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Carlos Pérez", email: "carlos.perez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Valentina Ruiz", email: "valentina.ruiz@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Andrés Martínez", email: "andres.martinez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Camila Herrera", email: "camila.herrera@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "David López", email: "david.lopez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Sofía Vargas", email: "sofia.vargas@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Felipe Castro", email: "felipe.castro@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Laura Jiménez", email: "laura.jimenez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Jorge Morales", email: "jorge.morales@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Daniela Ortiz", email: "daniela.ortiz@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Sebastián Rojas", email: "sebastian.rojas@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Isabella Ramírez", email: "isabella.ramirez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Mateo Gómez", email: "mateo.gomez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Natalia Sánchez", email: "natalia.sanchez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Santiago Guerrero", email: "santiago.guerrero@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Paula Mendoza", email: "paula.mendoza@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Diego Cárdenas", email: "diego.cardenas@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Carolina Navarro", email: "carolina.navarro@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Tomás Silva", email: "tomas.silva@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Juliana Torres", email: "juliana.torres@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Esteban Moreno", email: "esteban.moreno@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Lucía Fernández", email: "lucia.fernandez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Simón Rivera", email: "simon.rivera@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Andrea Vargas", email: "andrea.vargas@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Juan Camilo Pérez", email: "juan.perez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Manuela Gómez", email: "manuela.gomez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Alejandro Castillo", email: "alejandro.castillo@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Laura Gutiérrez", email: "laura.gutierrez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Carlos Nieto", email: "carlos.nieto@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Tatiana Duarte", email: "tatiana.duarte@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Andrés Prieto", email: "andres.prieto@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Mariana Serrano", email: "mariana.serrano@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "David Cabrera", email: "david.cabrera@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Valeria Méndez", email: "valeria.mendez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Cristian López", email: "cristian.lopez@example.com", createdAt: new Date() })
+db.usuario.insertOne({ nombre: "Daniel Muñoz", email: "daniel.munoz@example.com", createdAt: new Date() })
+
+//Insertar documentos en la colección: titulo
+db.titulo.insertOne({ nombre: "El Viaje Infinito", tipo: "pelicula", generos: ["Aventura", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Sombras del Pasado", tipo: "serie", generos: ["Suspenso", "Misterio"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Horizonte Perdido", tipo: "pelicula", generos: ["Accion", "Ciencia Ficcion"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Guardian del Tiempo", tipo: "serie", generos: ["Fantasia", "Aventura"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Codigo Secreto", tipo: "pelicula", generos: ["Accion", "Suspenso"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Ciudad Oscura", tipo: "pelicula", generos: ["Drama", "Crimen"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Amor y Destino", tipo: "serie", generos: ["Romance", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Silencio de la Lluvia", tipo: "pelicula", generos: ["Misterio", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Reino Prohibido", tipo: "pelicula", generos: ["Fantasia", "Accion"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Colision", tipo: "serie", generos: ["Accion", "Suspenso"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Planeta Olvidado", tipo: "pelicula", generos: ["Ciencia Ficcion", "Aventura"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Refugio", tipo: "serie", generos: ["Drama", "Romance"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Ecos del Futuro", tipo: "pelicula", generos: ["Ciencia Ficcion", "Thriller"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "La Ultima Batalla", tipo: "pelicula", generos: ["Accion", "Guerra"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Destino Final", tipo: "serie", generos: ["Suspenso", "Terror"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Caminos Cruzados", tipo: "pelicula", generos: ["Drama", "Romance"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Luna Roja", tipo: "pelicula", generos: ["Terror", "Fantasia"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "La Casa Vacia", tipo: "serie", generos: ["Suspenso", "Misterio"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Experimento", tipo: "pelicula", generos: ["Drama", "Ciencia Ficcion"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Camino a la Gloria", tipo: "pelicula", generos: ["Deportes", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Regreso del Heroe", tipo: "serie", generos: ["Accion", "Aventura"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Bajo el Mar", tipo: "pelicula", generos: ["Aventura", "Infantil"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Memorias de un Asesino", tipo: "pelicula", generos: ["Crimen", "Suspenso"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Suenos Rotos", tipo: "serie", generos: ["Drama", "Romance"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Bosque", tipo: "pelicula", generos: ["Terror", "Suspenso"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Misterios del Mar", tipo: "pelicula", generos: ["Aventura", "Misterio"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Tiempo Limite", tipo: "serie", generos: ["Accion", "Thriller"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Cazador de Sombras", tipo: "pelicula", generos: ["Accion", "Fantasia"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "La Ruta Perdida", tipo: "pelicula", generos: ["Aventura", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Noche Eterna", tipo: "serie", generos: ["Terror", "Suspenso"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Bajo la Niebla", tipo: "pelicula", generos: ["Drama", "Misterio"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Al Filo del Manana", tipo: "pelicula", generos: ["Accion", "Ciencia Ficcion"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Sombras del Tiempo", tipo: "serie", generos: ["Fantasia", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Guardian del Lago", tipo: "pelicula", generos: ["Aventura", "Misterio"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Entre Dos Mundos", tipo: "pelicula", generos: ["Romance", "Ciencia Ficcion"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Viaje de la Esperanza", tipo: "serie", generos: ["Drama", "Motivacional"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "Eternidad", tipo: "pelicula", generos: ["Romance", "Drama"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "El Ultimo Refugio", tipo: "pelicula", generos: ["Accion", "Suspenso"], createdAt: new Date() })
+db.titulo.insertOne({ nombre: "La Historia Oculta", tipo: "serie", generos: ["Drama", "Historico"], createdAt: new Date() })
+
+//Insertar documentos en la colección: resenia
+db.resenia.insertOne({
+  usuarioId: ObjectId('690d0632ee9222832563b115'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b160'),
+  puntuacion: 9,
+  comentario: "Una historia fascinante que te atrapa desde el inicio.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66cb1d061d5dc63b112'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b161'),
+  puntuacion: 8,
+  comentario: "Buena trama, aunque el final me pareció un poco predecible.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b113'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b162'),
+  puntuacion: 10,
+  comentario: "Excelente narrativa y personajes muy bien desarrollados.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b114'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b163'),
+  puntuacion: 7,
+  comentario: "Interesante concepto, pero le faltó ritmo en algunas partes.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b115'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b164'),
+  puntuacion: 9,
+  comentario: "Una obra que te deja pensando mucho después de verla.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('690d0632ee9222832563b115'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b161'),
+  puntuacion: 6,
+  comentario: "Tiene buenas ideas pero no termina de despegar.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66cb1d061d5dc63b112'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b162'),
+  puntuacion: 10,
+  comentario: "Una joya visual con un mensaje muy poderoso.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b113'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b163'),
+  puntuacion: 8,
+  comentario: "Me gustó, aunque esperaba más desarrollo en los personajes secundarios.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b114'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b164'),
+  puntuacion: 9,
+  comentario: "Gran historia, excelente fotografía y música.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b115'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b160'),
+  puntuacion: 7,
+  comentario: "Buena, aunque con algunos momentos algo lentos.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('690d0632ee9222832563b115'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b162'),
+  puntuacion: 9,
+  comentario: "Muy buena producción, actuaciones sólidas.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66cb1d061d5dc63b112'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b163'),
+  puntuacion: 8,
+  comentario: "Tiene escenas que realmente impresionan.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b113'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b164'),
+  puntuacion: 10,
+  comentario: "Simplemente espectacular, de lo mejor del año.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b114'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b160'),
+  puntuacion: 6,
+  comentario: "Interesante propuesta, pero faltó profundidad en la historia.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b115'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b161'),
+  puntuacion: 7,
+  comentario: "Entretenida, pero no llega a ser memorable.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('690d0632ee9222832563b115'),
+  tituloId: ObjectId('6914faf9b1d061d5dc63b163'),
+  puntuacion: 8,
+  comentario: "Muy buena ambientación, se nota el trabajo de producción.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66cb1d061d5dc63b112'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b164'),
+  puntuacion: 9,
+  comentario: "Excelente guion, no te deja despegarte de la pantalla.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b113'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b160'),
+  puntuacion: 8,
+  comentario: "Muy bien lograda, aunque el ritmo decae un poco al final.",
+  createdAt: new Date()
+})
+
+db.resenia.insertOne({
+  usuarioId: ObjectId('6914f66db1d061d5dc63b114'),
+  tituloId: ObjectId('6914faf8b1d061d5dc63b162'),
+  puntuacion: 10,
+  comentario: "Obra maestra. Sin duda una de mis favoritas.",
+  createdAt: new Date()
+})
+
+

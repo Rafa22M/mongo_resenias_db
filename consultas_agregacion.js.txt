@@ -1,0 +1,41 @@
+// CONSULTAS DE AGREGACIÓN
+//-------------------------------------------------
+
+// Consulta para promediar
+// Promediar por títulos mejor valorados por los usuarios
+db.resenia.aggregate([
+  {
+    $group: {
+      _id: "$tituloId",
+      promedioPuntuacion: { $avg: "$rating" },
+      cantidadResenias: { $sum: 1 }
+    }
+  },
+  {
+    $sort: { promedioPuntuacion: -1 }
+  }
+])
+
+// Consulta para sumar
+// Calcular la suma total de puntuaciones registradas
+db.resenia.aggregate([
+  {
+    $group: {
+      _id: null,
+      totalPuntuaciones: { $sum: "$puntuacion" },
+      totalResenias: { $sum: 1 }
+    }
+  }
+])
+
+// Consulta para contar
+// Contar cuántas reseñas tiene cada usuario
+db.resenia.aggregate([
+  {
+    $group: {
+      _id: "$usuarioId",
+      totalResenias: { $sum: 1 }
+    }
+  },
+  { $sort: { totalResenias: -1 } }
+])

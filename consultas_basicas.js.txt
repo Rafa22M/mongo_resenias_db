@@ -1,0 +1,102 @@
+// CONSULTAS BASICAS
+//------------------------------------
+
+// Consultas de inserción
+// Insertar un nuevo usuario
+db.usuario.insertOne({
+  nombre: "Laura Jiménez",
+  email: "laura.jimenez@example.com",
+  createdAt: new Date()
+})
+
+// Insertar un nuevo título
+db.titulo.insertOne({
+  nombre: "El Laberinto de los Ecos",
+  tipo: "pelicula",
+  generos: ["misterio", "drama", "suspenso"],
+  createdAt: new Date()
+})
+
+// Insertar una nueva reseña
+db.resenia.insertOne({
+usuarioId: ObjectId('6914f66cb1d061d5dc63b112'),
+tituloId: ObjectId('6914faf8b1d061d5dc63b162'),
+puntuacion: 8,
+comentario: "Muy entretenida, con giros inesperados.",
+createdAt: new Date()
+})
+
+
+// Consultas de selección
+//  Ver todos los usuarios
+db.usuario.find()
+
+//  Mostrar solo los títulos que sean de tipo "serie"
+db.titulo.find({ tipo: "serie" })
+
+//  Buscar reseñas con puntuación mayor o igual a 9
+db.resenia.find({ puntuacion: { $gte: 9 } })
+
+
+// Consultas de actualización
+// Cambiar el correo de un usuario
+db.usuario.updateOne(
+{ nombre: "Laura Jiménez" },
+{ $set: { email: "laura.j@example.com" } }
+ )
+
+// Actualizar el tipo de un título
+db.titulo.updateOne(
+{ nombre: "El Laberinto de los Ecos" },
+{ $set: { tipo: "serie" } }
+)
+
+
+// Consultas de eliminación
+// Eliminar un título específico
+db.titulo.deleteOne({ nombre: "El Laberinto de los Ecos" })
+
+// Eliminar reseñas con puntuación menor a 7
+db.resenia.deleteMany({ puntuacion: { $lt: 7 } })
+
+
+// Consultas con filtros y operadores
+// Filtros con operadores de comparación
+// Mostrar todas las reseñas con puntuación igual o mayor a 8
+db.resenia.find({ puntuacion: { $gte: 8 } })
+
+//Buscar todos los títulos que sean “películas”
+db.titulo.find({ tipo: { $eq: "pelicula" } })
+
+// filtrar todos los usuarios excepto el que se llama “Rafael”
+db.usuario.find({ nombre: { $ne: "Rafael" } })
+
+
+// Filtros con operadores lógicos
+// Filtrar por series con el genero drama
+db.titulo.find({
+  $and: [{ tipo: "serie" }, { generos: "Drama" }]
+})
+
+// Filtro para mostrar los usuarios llamados María Gómez o Carlos Pérez
+db.usuario.find({
+  $or: [{ nombre: "María Gómez" }, { nombre: "Carlos Pérez" }]
+})
+
+// Mostrar reseñas con puntuación mayor o igual a 8 y que no contengan la palabra “mala” en el comentario.
+db.resenia.find({
+      $and: [{ puntuacion: { $gte: 8 } }, { comentario: { $not: /mala/i } }]
+      })
+
+
+// Filtros con operadores para arreglos
+// Buscar títulos que tengan romance o aventura como género.
+db.titulo.find({ generos: { $in: ["Romance", "Aventura"] } })
+
+// Mostrar los títulos que tengan ambos géneros: drama y misterio
+db.titulo.find({ generos: { $all: ["Drama", "Misterio"] } })
+
+// Devuelve los títulos que tengan exactamente tres géneros
+db.titulo.find({ generos: { $size: 3 } })
+
+
